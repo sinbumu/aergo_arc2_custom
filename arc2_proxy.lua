@@ -143,7 +143,7 @@ function query(callName, ...)
 end
 
 function check_delegation(fname, ...)
-    return contract.delegatecall(_implementation:get(), "checkDelegation", ...)
+    return contract.delegatecall(_implementation:get(), "check_delegation", ...)
 end
 
 abi.register(upgradeTo, upgradePayableList, refund)
